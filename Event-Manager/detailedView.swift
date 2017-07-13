@@ -34,6 +34,12 @@ class detailedView: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    @IBAction func edit(_ sender: Any) {
+        let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+        let nextViewController = storyBoard.instantiateViewController(withIdentifier: "EditView") as! EditView
+        nextViewController.Event = event
+        self.present(nextViewController, animated:true, completion:nil)
+    }
     
 
     /*
