@@ -19,6 +19,7 @@ class EditView: UIViewController,
     var data:String!
     var imageDataString=""
     var strBase64:String=""
+    var initialName:String!
     @IBOutlet weak var EventAdress: UITextField!
     @IBOutlet weak var EventPrice: UITextField!
     @IBOutlet weak var EventName: UITextField!
@@ -26,9 +27,13 @@ class EditView: UIViewController,
     @IBOutlet weak var previewImage: UIImageView!
     override func viewDidLoad() {
     super.viewDidLoad()
+     initialName=Event.name!
      EventName.text=Event.name!
      EventAdress.text=Event.adress!
     EventPrice.text=Event.price!
+        date=Event.date!
+        time=Event.time!
+        strBase64=Event.imgData!
     let dataDecoded : Data = Data(base64Encoded: Event.imgData!, options: .ignoreUnknownCharacters)!
         let decodedimage = UIImage(data: dataDecoded)
        previewImage.image=decodedimage
@@ -88,8 +93,10 @@ class EditView: UIViewController,
         ]
         let ref=Database.database().reference()
         let name=EventName.text!
-        let database=ref.child("Events").child(name)
+        var database=ref.child("Events").child(initialName)
         print(name)
+        database.removeValue()
+        database=ref.child("Events").child(EventName.text!)
         database.updateChildValues(newEvent)
         EventName.text=""
         EventAdress.text=""

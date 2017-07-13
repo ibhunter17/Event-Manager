@@ -34,7 +34,6 @@
 		66539CEE1F17C1F800957D14 /* CustomCelTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCelTableViewCell.swift; sourceTree = "<group>"; };
 		66539CF01F17DAB600957D14 /* Events.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Events.swift; sourceTree = "<group>"; };
 		66539CF21F17E17400957D14 /* detailedView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = detailedView.swift; sourceTree = "<group>"; };
-		66865E701F17B3370019FA89 /* Events.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Events.swift; sourceTree = "<group>"; };
 		66A60BC11F174DC2006A9DD1 /* AddEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddEvent.swift; sourceTree = "<group>"; };
 		66B095D81F17E68D0004E7AF /* EditView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditView.swift; sourceTree = "<group>"; };
 		CF7551D0666285F5F9888930 /* Pods-Event-Manager.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Event-Manager.release.xcconfig"; path = "Pods/Target Support Files/Pods-Event-Manager/Pods-Event-Manager.release.xcconfig"; sourceTree = "<group>"; };
@@ -90,7 +89,6 @@
 				66B095D81F17E68D0004E7AF /* EditView.swift */,
 				66539CF21F17E17400957D14 /* detailedView.swift */,
 				66539CEE1F17C1F800957D14 /* CustomCelTableViewCell.swift */,
-				66865E701F17B3370019FA89 /* Events.swift */,
 				66A60BC11F174DC2006A9DD1 /* AddEvent.swift */,
 				66539CF01F17DAB600957D14 /* Events.swift */,
 				664FCED31F17460A00B554DD /* Assets.xcassets */,

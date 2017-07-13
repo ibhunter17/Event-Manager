@@ -42,18 +42,12 @@
                                         <rect key="frame" x="0.0" y="28" width="414" height="96"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="93k-0o-Asa" id="TKb-HL-6b8">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="95.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="95"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hWW-c7-XFO">
                                                     <rect key="frame" x="0.0" y="13" width="414" height="96"/>
                                                     <subviews>
-                                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="zys-TS-SOD">
-                                                            <rect key="frame" x="0.0" y="0.0" width="125" height="58.333333333333329"/>
-                                                            <constraints>
-                                                                <constraint firstAttribute="width" constant="125" id="jSV-WG-7FM"/>
-                                                            </constraints>
-                                                        </imageView>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="UK9-fF-hda">
                                                             <rect key="frame" x="133" y="8.3333333333333339" width="273" height="21"/>
                                                             <constraints>
@@ -64,22 +58,28 @@
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Q7i-ht-dDr">
-                                                            <rect key="frame" x="133" y="37.333333333333329" width="273" height="20.999999999999993"/>
+                                                            <rect key="frame" x="133" y="37" width="70" height="21"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="zys-TS-SOD">
+                                                            <rect key="frame" x="19" y="0.0" width="83" height="58"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="83" id="jSV-WG-7FM"/>
+                                                            </constraints>
+                                                        </imageView>
                                                     </subviews>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <constraints>
                                                         <constraint firstItem="UK9-fF-hda" firstAttribute="leading" secondItem="Q7i-ht-dDr" secondAttribute="leading" id="1DU-oM-MaO"/>
-                                                        <constraint firstItem="zys-TS-SOD" firstAttribute="leading" secondItem="hWW-c7-XFO" secondAttribute="leading" id="33O-dU-1jY"/>
+                                                        <constraint firstItem="zys-TS-SOD" firstAttribute="leading" secondItem="hWW-c7-XFO" secondAttribute="leading" constant="19" id="33O-dU-1jY"/>
                                                         <constraint firstItem="zys-TS-SOD" firstAttribute="bottom" secondItem="Q7i-ht-dDr" secondAttribute="bottom" id="GIg-TW-A5O"/>
                                                         <constraint firstItem="UK9-fF-hda" firstAttribute="top" secondItem="hWW-c7-XFO" secondAttribute="topMargin" id="LcW-Gf-sY2"/>
                                                         <constraint firstItem="zys-TS-SOD" firstAttribute="top" secondItem="hWW-c7-XFO" secondAttribute="top" id="NQO-HJ-zFC"/>
-                                                        <constraint firstItem="UK9-fF-hda" firstAttribute="leading" secondItem="zys-TS-SOD" secondAttribute="trailing" constant="8" symbolic="YES" id="Nb7-nm-oLM"/>
+                                                        <constraint firstItem="UK9-fF-hda" firstAttribute="leading" secondItem="zys-TS-SOD" secondAttribute="trailing" constant="31" id="Nb7-nm-oLM"/>
                                                         <constraint firstItem="Q7i-ht-dDr" firstAttribute="top" secondItem="UK9-fF-hda" secondAttribute="bottom" constant="8" symbolic="YES" id="dne-zC-wuo"/>
-                                                        <constraint firstItem="UK9-fF-hda" firstAttribute="trailing" secondItem="Q7i-ht-dDr" secondAttribute="trailing" id="drc-7w-ZBm"/>
+                                                        <constraint firstItem="UK9-fF-hda" firstAttribute="trailing" secondItem="Q7i-ht-dDr" secondAttribute="trailing" constant="203" id="drc-7w-ZBm"/>
                                                         <constraint firstAttribute="bottom" secondItem="zys-TS-SOD" secondAttribute="bottom" constant="37.666666666666664" id="end-1a-WN2"/>
                                                     </constraints>
                                                 </view>
@@ -577,9 +577,8 @@
                         <outlet property="EventAdress" destination="Iu1-KP-SiN" id="bMI-l2-kyv"/>
                         <outlet property="EventName" destination="XCl-Yd-UIY" id="hLy-E6-xDu"/>
                         <outlet property="EventPrice" destination="5Zh-89-hRM" id="BqR-kL-Ttj"/>
-                        <outlet property="datePicker" destination="A7A-sY-rsg" id="Itr-yL-Zz7"/>
+                        <outlet property="datePicker" destination="A7A-sY-rsg" id="qwz-uP-yC4"/>
                         <outlet property="previewImage" destination="Iua-Te-tUg" id="9gW-QB-5h3"/>
-                        <outlet property="valueDatePicker" destination="A7A-sY-rsg" id="aMe-5v-BWo"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="olS-Vc-yoV" userLabel="First Responder" sceneMemberID="firstResponder"/>
